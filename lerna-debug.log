@@ -1,0 +1,54 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   '$0': 'D:\\AppData\\nodejs\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v6.5.1
+2 verbose rootPath D:\projects\LernaDemo\lerna-getting-started-example
+3 info current version 0.0.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch dev
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream dev is behind origin/dev by 0 commit(s) and ahead by 0
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "2309547" => {"refCount":"8","sha":"2309547","isDirty":false}
+14 info Assuming all packages changed
+15 verbose updated footer
+16 verbose updated header
+17 verbose updated remixapp
+18 verbose git-describe undefined => "2309547"
+19 silly git-describe parsed => {"refCount":"8","sha":"2309547","isDirty":false}
+20 info execute Skipping releases
+21 silly lifecycle No script for "preversion" in "root", continuing
+22 silly lifecycle No script for "preversion" in "footer", continuing
+23 silly lifecycle No script for "preversion" in "header", continuing
+24 silly lifecycle No script for "version" in "header", continuing
+25 silly lifecycle No script for "version" in "footer", continuing
+26 silly lifecycle No script for "preversion" in "remixapp", continuing
+27 silly lifecycle No script for "version" in "remixapp", continuing
+28 verbose version Updating root package-lock.json
+29 silly lifecycle No script for "version" in "root", continuing
+30 silly gitAdd [
+30 silly gitAdd   'packages/header/package.json',
+30 silly gitAdd   'packages/header/package-lock.json',
+30 silly gitAdd   'packages/footer/package.json',
+30 silly gitAdd   'packages/footer/package-lock.json',
+30 silly gitAdd   'packages/remixapp/package.json',
+30 silly gitAdd   'packages/remixapp/package-lock.json',
+30 silly gitAdd   'lerna.json',
+30 silly gitAdd   'package-lock.json'
+30 silly gitAdd ]
+31 silly gitCommit v1.0.0
+32 verbose git [ 'commit', '-m', 'v1.0.0' ]
+33 silly gitTag v1.0.0 git tag %s -m %s
+34 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+35 error Error: Command failed with exit code 128: git tag v1.0.0 -m v1.0.0
+35 error fatal: tag 'v1.0.0' already exists
+35 error     at makeError (D:\AppData\nvm\v19.8.0\node_modules\lerna\node_modules\execa\lib\error.js:59:11)
+35 error     at handlePromise (D:\AppData\nvm\v19.8.0\node_modules\lerna\node_modules\execa\index.js:114:26)
+35 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+35 error     at async Promise.all (index 0)
